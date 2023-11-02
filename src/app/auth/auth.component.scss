@@ -1,0 +1,48 @@
+:root {
+  --darkPink: #e21b70;
+  --white: #ffffff;
+  --lightGrey: #bac3c3;
+}
+
+.mainDiv {
+  width: 40%;
+  margin: 2% auto;
+  padding: 2%;
+  background-color: #fff;
+  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 8%);
+  .login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    nz-form-item {
+      nz-form-control {
+        nz-input-group {
+          width: 100%;
+          height: 50px;
+          border-radius: 5px;
+          border: 1px solid #e4e4e4;
+        }
+      }
+    }
+    .login-form-button {
+      width: 100%;
+      height: 50px;
+    }
+    .bg-gray {
+      background-color: #f7f7f7;
+      color: #e21b70;
+      border: none;
+    }
+    .login-form-margin {
+      margin-bottom: 16px;
+    }
+    .bg-pink:valid {
+      background-color: #e21b70;
+      color: white;
+      border: none;
+    }
+    .bg-pink:disabled {
+      color: black;
+      border: none;
+    }
+  }
+}

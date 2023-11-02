@@ -1,0 +1,24 @@
+<div class="site-page-header-ghost-wrapper header">
+  <nz-page-header [nzGhost]="false">
+    <nz-page-header-title>
+      <img
+        src="https://www.supermeal.co.uk/App_Themes/theme-uk/images/logo.png"
+        alt=""
+        srcset=""
+      />
+    </nz-page-header-title>
+    <nz-page-header-subtitle>I am a Restaurant</nz-page-header-subtitle>
+    <nz-page-header-extra>
+      <nz-space>
+        <p *nzSpaceItem nz-button>About Us</p>
+        <p *nzSpaceItem nz-button nzType="primary">Help?</p>
+        <button *ngIf="!isAuthenticated" style="height: 40px; margin-right: 30px;"  nz-button class="login-form-button bg-pink">
+          Register Now
+        </button>
+        <button *ngIf="isAuthenticated" (click)="logout()" style="height: 40px; margin-right: 30px; width: 60px;"  nz-button class="login-form-button bg-pink">
+          Logout
+        </button>
+      </nz-space>
+    </nz-page-header-extra>
+  </nz-page-header>
+</div>
